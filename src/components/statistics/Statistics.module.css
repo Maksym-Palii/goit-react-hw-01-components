@@ -1,0 +1,32 @@
+.statistics{
+    margin-top: 50px;
+    width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 50px;
+        background-color: gainsboro;
+}
+
+.title{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+.statList{
+    display: flex;
+}
+
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    padding: 10px;
+    background-color: wheat;
+    border: 1px solid rgba(0, 0, 255, 0.7);
+}
+*{
+    outline: 1px solid tomato;
+}
