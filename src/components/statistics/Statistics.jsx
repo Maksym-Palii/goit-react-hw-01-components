@@ -1,5 +1,6 @@
 import PropTypes from "prop-types"
 import css from 'components/statistics/Statistics.module.css'
+import { getRandomHexColor} from 'utils/randomHexColor'
 
 
 
@@ -11,9 +12,9 @@ export const Statistics = ({ title=`Upload stats`, stats }) => {
             <ul className={css.statList}>
                 {stats.map(({id, label, percentage }) => {
                     return (
-                        <li key={id} className={css.item}>
-                    <span className="label">{label}</span>
-                    <span className="percentage">{percentage}%</span>
+                        <li key={id} className={css.item} style={{ backgroundColor: getRandomHexColor(), }}>
+                    <span className={css.label}>{label}</span>
+                    <span className={css.percentage}>{percentage}%</span>
                         </li>)
                  })}
         </ul>
@@ -27,6 +28,5 @@ Statistics.propTypes = {
     id: PropTypes.string.isRequired,
     label: PropTypes.string.isRequired,
     percentage: PropTypes.number.isRequired,
-  })),
-    
+  }))  
 }

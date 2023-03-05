@@ -1,0 +1,30 @@
+.transactionHistory{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
+}
+
+.transactionHistory th,
+.transactionHistory td{
+    border: 1px solid gray;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+
+.transactionHistory th{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: white;
+    background-color:darkturquoise;}
+
+.transactionHistory tbody tr:nth-child(2n){
+    background-color: gainsboro;
+}
+
+.transactionHistory td{
+    text-transform: capitalize ;
+}
